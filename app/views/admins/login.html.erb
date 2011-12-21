@@ -1,6 +1,11 @@
 <h1>Login</h1>
 
-<%= form_for(@admin) do |f|%>
-    <%= f.label :email %>
-  <%= f.text_field :emai %>
+<%= form_for(@admin, :url => "/") do |f|%>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  
+  <%= submit_tag "Submit" %>
 <% end %>

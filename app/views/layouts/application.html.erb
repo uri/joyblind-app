@@ -9,21 +9,31 @@
 </head>
 
 <body>
-
-
-<div class="container">
-  
-  <%= render 'layouts/header'%>
   
   
-<%= yield %>
+<div id="main-wrapper">
 
-<footer>
-</footer>
+  <!-- HEADER -->
+
+  <div id="header">
+    <p><a href="/"><img src="/images/header.jpg" alt="JOYBLIND"></a></p>
+    <p class="login"><a href="/login">Login</a></p>
+  </div><!-- header end-->
+
+
+  <!-- Navigation -->
+ <%= render 'layouts/navigation' %>
+
+  <!-- CONTENT -->	
+  <p id="main-content">
+    
+  <%= yield %>
+    
+  </p><!-- main-content end-->
+
+  </div><!-- main-content end-->
+</div><!-- main-wrapper end-->
 
 </div>
 </body>
-
-
-
 </html>
