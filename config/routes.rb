@@ -1,10 +1,13 @@
 JoyblindApp::Application.routes.draw do
   get "users/new"
+  get "admin/new"
+
 
 	root :to => 'pages#home'
 	match '/contact', :to => "pages#contact"
 	match '/about', :to => "pages#about"
 	match '/contact', :to => "pages#help"
+	match '/login', :to => "admins#login"
 
 	
 
